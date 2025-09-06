@@ -1,0 +1,492 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #252222;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures left, center, right alignment */
+    gap: 0;
+    
+  }
+  
+  nav > span {
+display: flex;
+  align-items: center;
+  min-width: 220px; /* Adjust as needed for your flag/title */
+  flex: 0 0 auto;
+  margin-right: 20px;
+
+}
+  nav ul {
+    list-style-type: none;
+      margin: 0;
+  padding: 0;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #e31207;
+  }
+
+  .nav-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1 1 auto;
+  }
+
+  .search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 8px rgba(229, 12, 12, 0.08);
+}
+
+.search-box input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 16px;
+  background: transparent;
+  width: 260px;
+}
+
+.search-box button {
+  border: none;
+  background: rgb(216, 17, 17);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.search-box button:hover {
+  background: #e3d407;
+}
+
+.search-icon {
+  margin-right: 5px;
+}
+
+  /* Basic CSS for the form elements */
+  body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+    background-image: url('./baia.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures the image covers at least the viewport height */
+    width: 100vw;      /* Ensures the image covers the full viewport width */
+    overflow-x: hidden; /* Prevents horizontal scroll if content overflows */
+    
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  h1:hover{
+    color: #e31207;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+.intro{
+  color: #fff;  
+    margin-bottom: 20px;
+    font-size: 20px;
+    max-width: 500px;
+    line-height: 1.2;
+    text-align: justify;
+    text-justify: inter-word;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow for better readability */
+}
+
+.about {
+  margin-left: 140px; 
+  position: relative;
+  top: -110px; /* Adjust as needed to appear below nav */
+  font-weight: 40px;
+    color: #fff;  
+    margin-bottom: 20px;
+    font-size: 40px;
+    max-width: 500px;
+    line-height: 1.2;
+    text-align: justify;
+    text-justify: inter-word;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow for better readability */
+  
+}
+.about_description{
+  position: relative;
+  top: -115px; /* Adjust as needed to appear below nav */
+   margin-left: 140px;
+  color: #fff;  
+    margin-bottom: 20px;
+    font-size: 15px;
+      max-width: none; 
+    line-height: 1.1;
+    text-align: justify;
+    text-justify: inter-word;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow for better readability */
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+      padding: 15px 32px;
+     }
+
+.description{
+  color: #fff;  
+    margin-bottom: 20px;
+    font-size: 15px;
+    max-width: 500px;
+    line-height: 1.1;
+    text-align: justify;
+    text-justify: inter-word;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow for better readability */
+     }
+  
+  .btnBook{
+    margin-top: 20px;
+    padding: 20px 20px; 
+    color: white; 
+   
+  }
+
+
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+text-justify: inter-word;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    cursor: pointer;
+  }
+
+  
+  
+  
+  /* Basic CSS for the report section */
+  h2 {
+    margin-top: 30px;
+  }
+  
+  #report,#result {
+    padding: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+#result{
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: justify;
+  
+  justify-content: space-around;
+  flex-direction: column;
+}
+  #result img{
+    width: 500px;
+    height: 300px;
+  }
+   #result h3, #result h2, #result p{
+    width: 500px;
+   
+   background-color: #fff;
+  }
+    #btnvisit{
+      width: 69px;
+    color: white; 
+    border-radius: 5px  ;
+    background-color: rgb(244, 240, 18);
+   
+  }
+
+.searchCondition{
+  position: absolute;
+  top: -115px; /* Adjust as needed to appear below nav */
+   margin-left: 800px;
+  
+}
+  
+#flag{
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.social-bar {
+  position: absolute;
+  top: 150px; /* Adjust as needed to appear below nav */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  z-index: 10;
+   gap: 58px;
+}
+
+.social-line {
+  width: 2px;
+  height: 150px; /* Adjust height as needed */
+  background: #fff;
+  margin-bottom: 10px;
+  
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.social-btn img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); /* makes icons white */
+  transition: filter 0.2s;
+}
+
+.social-btn img:hover {
+  filter: invert(62%) sepia(98%) saturate(748%) hue-rotate(1deg) brightness(104%) contrast(101%);
+}
+
+/* Make sure your main content has enough left margin */
+.container {
+  margin-left: 90px; /* Adjust so content doesn't overlap sidebar */
+  position: absolute;
+  top: 230px; /* Adjust as needed to appear below nav */
+    background: transparent;
+  
+}
+
+.ourteam {
+  position: relative;
+  top: -115px; /* Adjust as needed to appear below nav */
+   margin-left: 200px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+ 
+  margin-bottom: 20px;
+  max-width: none;
+}
+
+.ourteam h2 {
+  font-size: 82px; 
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  min-width: 180px;
+  margin-right: 32px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row; /* Horizontal row */
+  gap: 62px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent; /* Use parent background */
+  border-radius: 18px;
+  padding: 0;
+  margin-left: 0;
+  max-width: 200px;
+  box-shadow: none;
+   background-color: rgba(0, 0, 0, 0.6); 
+  padding: 10px 80px; 
+  border-radius: 18px;
+  position: relative;
+  top: 50px;
+}
+
+.team-member img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 1px solid #fff;
+  margin-right: 0;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+    color: #fff;
+      white-space: nowrap;
+}
+
+.team-member h3 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  font-size: 15px; /* Match about_description font size */
+  font-weight: 600;
+  text-align: left;
+}
+
+.role-btn {
+  background: #f30a0a;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 24px;
+  font-size: 15px; /* Match about_description font size */
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+    white-space: nowrap;
+}
+.person-icon {
+  font-size: 22px;
+  color: #fff;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  left: -30px;
+  top: 22px
+}
+
+
+
+  .contact-section {
+  background: rgba(0,0,0,0.6);
+left: 750px;
+top: -60px;
+  position: relative;
+  max-width: 600px;
+  margin: 60px auto;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 40px 32px;
+
+  margin: 40px auto;
+
+
+
+}
+
+.contact-title {
+  position: absolute;
+  text-align: center;
+  left: 170px;
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 18px;
+   white-space: nowrap;
+  letter-spacing: 2px;
+  top: -40px;
+}
+
+
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.contact-left {
+ position: relative;
+  top: 80px;
+}
+
+.contact-subtitle {
+    position: absolute;
+     left: 170px;
+     white-space: nowrap;
+     top: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+
+  font-size: 16px;
+  margin-bottom: 16px;
+  background: rgba(0,0,0,0.6);
+  color: #e4eb0a;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+}
+
+.send-btn {
+  background: #0074D9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.send-btn:hover {
+  background: #005fa3;
+}
+

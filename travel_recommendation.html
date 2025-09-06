@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AngolaTravel</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+  <nav>
+  <span>
+    <h1>
+      <img id="flag" src="./flag.png" alt="flag">AngolaTravel
+    </h1>
+  </span>
+  <ul class="nav-center">
+    <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+    <li><a href="./about.html" id="aboutUS">About Us</a></li>
+    <li><a href="./contactUs.html" id="contact">Contact Us</a></li>
+  </ul>
+  <div class="search-box">
+    <input type="text" id="destinationInput" placeholder="Enter a destination or Keyword " ><span class="search-icon">&#128269;</span>
+    <button id="btnSearch"> Search</button><p></p>
+    <button id="btnClear">Clear</button>
+  </div>
+</nav>
+
+<div class="social-bar">
+  <div class="social-line"></div>
+  <div class="social-icons">
+    <a href="https://twitter.com" target="_blank" class="social-btn" title="Twitter">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
+    </a>
+    <a href="https://facebook.com" target="_blank" class="social-btn" title="Facebook">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+    </a>
+    <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+    </a>
+    <a href="https://youtube.com" target="_blank" class="social-btn" title="YouTube">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" />
+    </a>
+  </div>
+</div>
+
+<div class="container">
+    
+        <div class="intro">
+        <h1>EXPLORE<br>DREAM<br> DESTINATION</h1>
+      
+        </div>
+
+        <div class="description">
+        <p>it encourages exploration of unfamiliar <br>
+          territories, embracing diverse cultures and <br>
+          landscapes, while pursuing the desired <br>
+          destination that captivates the heart and <br>
+          ignites a sense of wonder.</p>
+        </div>
+        <br><br>
+        <button id="btnBook">BOOK NOW</button>
+      
+        <div class="searchCondition">
+            <div id="result"></div>
+        </div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
